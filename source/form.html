@@ -47,8 +47,99 @@
     </div>
   </header>
 
-  <main>
+  <main class="page-form__main">
+    <h1 class="visualy-hidden">
+      Форма, чтобы оставить отзыв
+    </h1>
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <header class="feedback__header">
+          <h2 class="feedback__title">
+            Оставьте свой отзыв
+          </h2>
+          <p class="feedback__intro">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </header>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="feedback__form__full-name">
+            <legend>Представьтесь:</legend>
+            <ul class="feedback__form__full-name__list">
+              <li class="feedback__form__full-name__item">
+                <label class="feedback__form__full-name__label" for="full-name__name">Имя:</label>
+                <input class="feedback__form__full-name__input"  id="full-name__name" type="text" name="name"  placeholder="Петр">
+              </li>
+              <li class="feedback__form__full-name__item">
+                <label class="feedback__form__full-name__label" for="full-name__surname">Фамилия:</label>
+                <input class="feedback__form__full-name__input" id="full-name__surname" type="text" name="surname"  placeholder="Иванов">
+              </li>
+              <li class="feedback__form__full-name__item">
+                <label class="feedback__form__full-name__label" for="full-name__lastname">Отчество:</label>
+                <input class="feedback__form__full-name__input" id="full-name__lastname" type="text" name="lastname"  placeholder="Александрович">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__form__contact-info">
+            <legend>Контактная информация:</legend>
+            <ul class="feedback__form__contact-info__list">
+              <li class="feedback__form__contact-info__item">
+                <label class="feedback__form__contact-info__label" for="contact-info__phone">Контактный телефон*:</label>
+                <input class="feedback__form__contact-info__input" id="contact-info__phone" type="tel" name="phone" placeholder="Введите телефон">
+              </li>
+              <li class="feedback__form__contact-info__item">
+                <label class="feedback__form__contact-info__label" for="contact-info__email">Электронная почта*:</label>
+              <input class="feedback__form__contact-info__input" id="contact-info__email" type="email" name="email"  placeholder="Введите e-mail">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__form__impression">
+            <legend>Ваше общее впечатление:</legend>
+            <ul class="feedback__form__impression__list">
+              <li class="feedback__form__impression__item">
+                <label class="feedback__form__impression__label" for="impression__positive">Скорее положительное</label>
+                <input class="feedback__form__impression__input feedback__form__impression__input--checked" id=impression__positive" type="radio" name="impression" value="positive" checked>
+              </li>
+              <li class="feedback__form__impression__item">
+                <label class="feedback__form__impression__label" for="impression__negative">Скорее отрицательное</label>
+                <input class="feedback__form__impression__input" id="impression__negative" type="radio" name="impression" value="negative">
+              </li>
+              <li class="feedback__form__impression__item">
+                <label class="feedback__form__impression__label" for="impression__difficult">Затрудняюсь ответить</label>
+                <input class="feedback__form__impression__input" id="impression__difficult" type="radio" name="impression" value="difficult">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__form__landmark">
+            <legend>Посещенные достопримечательности:</legend>
+            <ul class="feedback__form__landmark__list">
+              <li class="feedback__form__landmark__item">
+                <label class="feedback__form__landmark__label" for="landmark__devil-bridge">Мост Дьявола</label>
+                <input class="feedback__form__landmark__input feedback__form__landmark__input--checked" id="landmark__devil-bridge" type="checkbox" name="landmark" value="devil-bridge" checked>
+              </li>
+              <li class="feedback__form__landmark__item">
+                <label class="feedback__form__landmark__label" for="landmark__mount-bell">Гора-Колокол</label>
+                <input class="feedback__form__landmark__input" id="landmark__mount-bell" type="checkbox" name="landmark" value="mount-bell">
+              </li>
+              <li class="feedback__form__landmark__item">
+                <label class="feedback__form__landmark__label" for="landmark__slide-park">Слайд-парк</label>
+                <input class="feedback__form__landmark__input" id="landmark__slide-park" type="checkbox" name="landmark" value="slide-park">
+              </li>
+              <li class="feedback__form__landmark__item">
+                <label class="feedback__form__landmark__label" for="landmark__red-rocks">Красные скалы</label>
+                <input class="feedback__form__landmark__input" id="landmark__red-rocks" type="checkbox" name="landmark" value="red- rocks">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__form__comment">
+            <legend>Опишите свои эмоции::</legend>
+              <label class="feedback__form__comment__label visualy-hidden" for="comment__comment"></label>
+              <textarea class="feedback__form__comment__textarea" id="comment__comment" name="comment"  placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="button button-submit" type="submit" >Отправить отзыв</button>
+        </form>
+      </div>
 
+    </section>
   </main>
 
   <footer class="page-footer">
