@@ -1,0 +1,6 @@
+.button {
+  color:$basic-white;
+  background-color: $basic-blue;
+  text-decoration: none;
+  @include font(700, 21px, 26px, uppercase, $basic-white);
+}

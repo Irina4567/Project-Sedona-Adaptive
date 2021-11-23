@@ -1,0 +1,72 @@
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item--blue {
+  background-color: $basic-blue;
+}
+
+.advantages__item {
+  .advantages__item__title {
+    @include font(700, 18px, 26px);
+  }
+
+  .advantages__item__description {
+    @include font(400, 14px, 21px);
+  }
+
+  .advantages__item__title--third::after {
+    content: "--№3--";
+    @include font(400, 14px, 21px);
+  }
+
+  .advantages__item__title--fourth::after {
+    content: "--№4--";
+    @include font(400, 14px, 21px);
+  }
+
+  .advantages__item__title--fifth::after {
+    content: "--№5--";
+    @include font(400, 14px, 21px);
+  }
+}
+
+.advantages__item--wide {
+  .advantages__item__title {
+    @include font(700, 18px, 26px, uppercase,$basic-white);
+  }
+
+  .advantages__item__description {
+    @include font(400, 14px, 21px, uppercase,$basic-white);
+  }
+
+  .advantages__item__title--first::after {
+    content: "--№1--";
+    @include font(400, 14px, 21px, uppercase,$basic-white);
+  }
+
+  .advantages__item__title--second::after {
+    content: "--№2--";
+    @include font(400, 14px, 21px, uppercase,$basic-white);
+  }
+}
+
+
+
+.city-advantages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .city-advantages__item__title {
+    @include font(700, 18px, 26px);
+  }
+
+  .city-advantages__item__description {
+    @include font(400, 14px, 21px);
+  }
+}
+
+

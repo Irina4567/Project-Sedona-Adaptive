@@ -1,0 +1,29 @@
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item-link {
+  text-decoration: none;
+  @include font(700, 14px, 26px);
+  &:hover {
+    color:$basic-blue;
+  }
+
+  &:active {
+    color: $special-black;
+  }
+}
+
+.main-nav__item-link--current {
+  color:$special-brown;
+
+    &:hover {
+      color: $special-brown-darken;
+    }
+
+    &:active {
+      color: $special-brown-lighten;
+    }
+}

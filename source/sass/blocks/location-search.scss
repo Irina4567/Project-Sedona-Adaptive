@@ -1,0 +1,7 @@
+.location-search__title {
+  @include font(700, 30px, 26px);
+}
+
+.location-search__description {
+  @include font(400, 14px, 24px);
+}

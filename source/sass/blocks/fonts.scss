@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PT Sans"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PT Sans Bold 700"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+}
+
+@mixin font($weight:normal, $size:30px, $line:26px, $transform:uppercase, $color:black) {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+  text-transform: $transform;
+  color: $color;
+  margin: 0;
+  padding: 0;
+}
