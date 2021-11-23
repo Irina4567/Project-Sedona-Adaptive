@@ -1,0 +1,6 @@
+.page__body {
+  @include font(400, 14px, 20px);
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+}
