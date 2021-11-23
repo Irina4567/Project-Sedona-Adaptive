@@ -1,0 +1,85 @@
+.advantages {
+  margin-bottom: 32px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  .advantages__item__title {
+    @include font(700, 18px, 26px);
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .advantages__item__description {
+    @include font(400, 14px, 21px);
+    text-align: center;
+  }
+}
+
+.advantages__item--wide {
+  .advantages__item__wrapper {
+    padding-top: 39px;
+    padding-bottom: 35px;
+  }
+  .advantages__item__title,
+  .advantages__item__description {
+    color:$basic-white;
+  }
+}
+
+.advantages__item__wrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.advantages__item__wrapper--blue {
+  background-color: $basic-blue;
+}
+
+.advantages__item__wrapper--gray {
+  background-color: $basic-gray;
+}
+
+$n:5;
+@for $i from 1 through $n {
+  .advantages__item__title--#{$i}::after {
+    content: "- №#{$i} -";
+    display: block;
+    text-align: center;
+    @include font(400, 14px, 42px);
+    @if ($i<=2) {
+     color: $basic-white;
+    }
+  }
+}
+
+.advantages__item__img {
+  background-color: $special-brown;
+  background-repeat: no-repeat;
+}
+
+.city-advantages {
+  list-style: none;
+  margin: 22px 0;
+  padding: 0;
+
+  .city-advantages__item {
+    padding-top:13px;
+    padding-bottom:13px;
+    margin: 0 auto;
+  }
+
+  .city-advantages__item__title {
+    @include font(700, 18px, 26px);
+    margin-bottom: 16px;
+  }
+
+  .city-advantages__item__description {
+    @include font(400, 14px, 21px);
+  }
+}

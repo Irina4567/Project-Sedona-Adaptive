@@ -1,0 +1,10 @@
+.page-footer__wrapper {
+  padding-bottom: 26px;
+  padding-top: 29px;
+  text-align: center;
+}
+
+.page-footer__hashtag {
+  @include font(700, 21px, 26px);
+  margin-bottom: 34px;
+}
