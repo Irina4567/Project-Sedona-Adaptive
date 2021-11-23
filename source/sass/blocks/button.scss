@@ -3,4 +3,16 @@
   background-color: $basic-blue;
   text-decoration: none;
   @include font(700, 21px, 26px, uppercase, $basic-white);
+  &:hover {
+    background-color: $basic-blue-darken;
+  }
+
+  &:active {
+    background-color: $basic-blue-dark;
+    color:$special-blue;
+  }
+
+  &:disabled {
+    background-color: $special-gray-ligthen;
+  }
 }
