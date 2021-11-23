@@ -25,3 +25,18 @@
   align-items: center;
   justify-content: center;
 }
+
+.special-button {
+  &:hover {
+    background-color: $basic-blue-darken;
+  }
+
+  &:active {
+    fill:$special-blue;
+  }
+
+  &:active path {
+    fill:$special-blue;
+    background-color: $basic-blue-dark;
+  }
+}
