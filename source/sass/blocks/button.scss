@@ -12,6 +12,10 @@
     color:$special-blue;
   }
 
+  &:active path {
+    fill:$special-blue;
+  }
+
   &:disabled {
     background-color: $special-gray-ligthen;
   }
