@@ -1,0 +1,16 @@
+.copyright__text {
+  @include font(400, 14px, 26px);
+}
+
+.copyright__link {
+  color:$basic-black;
+  text-decoration: none;
+
+  &:hover path {
+    fill:$basic-blue;
+  }
+
+  &:active path {
+    fill:$special-black;
+  }
+}
