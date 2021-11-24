@@ -15,15 +15,3 @@
        url("../fonts/ptsansbold.woff2") format("woff2"),
        url("../fonts/ptsansbold.woff") format("woff");
 }
-
-@mixin font($weight:normal, $size:30px, $line:26px, $transform:uppercase, $color:black) {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $line;
-  text-transform: $transform;
-  color: $color;
-  margin: 0;
-  padding: 0;
-}
