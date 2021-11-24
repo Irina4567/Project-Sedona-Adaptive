@@ -2,8 +2,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
+.site-list__item-link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+/*
 .main-nav__item-link {
   text-decoration: none;
   @include font(700, 14px, 26px);
@@ -15,7 +22,7 @@
     color: $special-black;
   }
 }
-/*
+
 .main-nav__item-link--current {
   color:$special-brown;
     &:hover {

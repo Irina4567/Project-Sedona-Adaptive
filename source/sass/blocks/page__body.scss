@@ -1,7 +1,6 @@
 .page__body {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  margin: 0;
-  padding:0;
+  @include font(400, 14px, 20px);
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
 }

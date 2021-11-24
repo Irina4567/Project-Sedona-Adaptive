@@ -1,7 +1,19 @@
+.location-search {
+  text-align: center;
+  margin-bottom: 49px;
+}
+
 .location-search__title {
-  @include font(700, 30px, 26px);
+  @include font(700, 21px, 26px);
+  margin-bottom: 22px;
 }
 
 .location-search__description {
   @include font(400, 14px, 24px);
+  margin-bottom: 27px;
+}
+
+.location-search__button {
+  display: inline-block;
+  padding: 15px 32px 17px;
 }

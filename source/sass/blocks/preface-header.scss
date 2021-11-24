@@ -1,5 +1,12 @@
+.preface-header__wrapper {
+  padding-top: 32px;
+  padding-bottom: 27px;
+  text-align: center;
+}
+
 .preface-header__title {
   @include font(700, 18px, 26px);
+  margin-bottom: 30px;
 }
 
 
