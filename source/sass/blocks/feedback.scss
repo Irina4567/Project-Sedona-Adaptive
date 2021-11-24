@@ -1,0 +1,33 @@
+.feedback__title {
+  @include font(700, 18px, 26px);
+}
+
+.field__label {
+  @include font(400, 14px, 26px);
+}
+
+.field__input {
+  background-color: $field-gray;
+  border: none;
+  @include font(700, 18px, 26px,capitalize);
+  padding: 18px 22px 14px;
+}
+
+.choice__label {
+  @include font(700, 18px, 26px, capitalize);
+}
+
+.comment__textarea {
+  @include font(700, 18px, 26px, capitalize);
+  background-color: $field-gray;
+  border: none;
+  padding: 13px 22px 29px;
+  resize:none;
+  display: block;
+}
+
+.button-submit {
+  display: inline-block;
+  padding: 19px 33px 14px;
+  border: none;
+}
