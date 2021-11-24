@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="page-form" lang="ru">
+<html class="page-form page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Sedona | Форма отзыва</title>
   <link href="/source/css/style.css" rel="stylesheet">
 </head>
-<body class="page-form__body">
+<body class="page-form__body page__body">
   <header class="page-header">
     <a class="page-header__logo">
       <img src="img/logotype.svg" width="102" height="84" alt="City of Sedona">
@@ -17,24 +17,24 @@
         </span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link button" href="index.html">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__item-link button" href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link button" href="catalog.html">
+          <li class="site-list__item">
+            <a class="site-list__item-link button" href="catalog.html">
               Фото и видео
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-current button">
+          <li class="site-list__item">
+            <a class="site-list__item-link site-list__item-current button">
               Форма отзыва
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link button" href="#">
+          <li class="site-list__item">
+            <a class="site-list__item-link button" href="#">
               Html academy
             </a>
           </li>
@@ -42,13 +42,10 @@
       </div>
     </nav>
     <img class="page-header__image" src="img/header-back.jpg" alt="Горный пейзаж" width="900" height="390">
-    <img class="page-header__image-decor" src="img/header-triangle.svg" alt="" width="1200" height="57">
-    <div class="page-header__text-index__wrapper">
-      <img src="img/text-sedona.svg" alt="Добро пожаловать в Sedona" width="230" height="40">
-    </div>
+    <img src="img/text-sedona.svg" alt="Добро пожаловать в Sedona" width="230" height="40">
   </header>
 
-  <main class="page-form__main">
+  <main class="page-form__main page__main">
     <h1 class="visualy-hidden">
       Форма отзыва
     </h1>
@@ -62,14 +59,14 @@
         </p>
       </div>
     </header>
-    <section class="feedback">
+    <section class="page-form__feedback feedback">
       <div class="feedback__wrapper">
         <h2 class="visualy-hidden">
           Обратная связь
         </h2>
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="feedback__full-name full-name">
-            <legend class="full-name__title">Представьтесь:</legend>
+            <legend class="feedback__title full-name__title">Представьтесь:</legend>
             <div class="full-name__item field">
               <label class="field__label" for="full-name__name">Имя:</label>
               <input class="field__input" id="full-name__name" type="text" name="name" placeholder="Петр">
@@ -84,7 +81,7 @@
             </div>
           </fieldset>
           <fieldset class="feedback__contact-info contact-info">
-            <legend class="contact-info__title">Контактная информация:</legend>
+            <legend class="feedback__title contact-info__title">Контактная информация:</legend>
             <div class="contact-info__item field">
               <label class="field__label" for="contact-info__phone">Контактный телефон*:</label>
               <input class="field__input" id="contact-info__phone" type="tel" name="phone" placeholder="Введите телефон">
@@ -95,45 +92,45 @@
             </div>
           </fieldset>
           <fieldset class="feedback__impression impression">
-            <legend class="impression__title">Ваше общее впечатление:</legend>
+            <legend class="feedback__title impression__title">Ваше общее впечатление:</legend>
             <div class="impression__item choice radio">
-              <label class="choice__label" for="impression__positive">Скорее положительное</label>
               <input class="radio__input radio__input--checked" id="impression__positive" type="radio" name="impression"
-                value="positive" checked>
+              value="positive" checked>
+              <label class="choice__label" for="impression__positive">Скорее положительное</label>
             </div>
             <div class="impression__item choice radio">
-              <label class="choice__label" for="impression__negative">Скорее отрицательное</label>
               <input class="radio__input" id="impression__negative" type="radio" name="impression" value="negative">
+              <label class="choice__label" for="impression__negative">Скорее отрицательное</label>
             </div>
             <div class="impression__item choice radio">
-              <label class="choice__label" for="impression__difficult">Затрудняюсь ответить</label>
               <input class="radio__input" id="impression__difficult" type="radio" name="impression" value="difficult">
+              <label class="choice__label" for="impression__difficult">Затрудняюсь ответить</label>
             </div>
           </fieldset>
           <fieldset class="feedback__landmark landmark">
-            <legend class="landmark__title">Посещенные достопримечательности:</legend>
+            <legend class="feedback__title landmark__title">Посещенные достопримечательности:</legend>
             <div class="landmark__item choice checkbox">
-              <label class="choice__label" for="landmark__devil-bridge">Мост Дьявола</label>
               <input class="checkbox__input checkbox__input--checked" id="landmark__devil-bridge" type="checkbox" name="landmark"
-                value="devil-bridge" checked>
+              value="devil-bridge" checked>
+              <label class="choice__label" for="landmark__devil-bridge">Мост Дьявола</label>
             </div>
             <div class="landmark__item choice checkbox">
-              <label class="choice__label" for="landmark__mount-bell">Гора-Колокол</label>
               <input class="checkbox__input" id="landmark__mount-bell" type="checkbox" name="landmark" value="mount-bell">
+              <label class="choice__label" for="landmark__mount-bell">Гора-Колокол</label>
             </div>
             <div class="landmark__item choice checkbox">
-              <label class="choice__label" for="landmark__slide-park">Слайд-парк</label>
               <input class="checkbox__input" id="landmark__slide-park" type="checkbox" name="landmark" value="slide-park">
+              <label class="choice__label" for="landmark__slide-park">Слайд-парк</label>
             </div>
             <div class="landmark__item choice checkbox">
-              <label class="choice__label" for="landmark__red-rocks">Красные скалы</label>
               <input class="checkbox__input" id="landmark__red-rocks" type="checkbox" name="landmark" value="red- rocks">
+              <label class="choice__label" for="landmark__red-rocks">Красные скалы</label>
             </div>
           </fieldset>
           <fieldset class="feedback__comment comment">
-            <legend class="comment__title">Опишите свои эмоции:</legend>
+            <legend class="feedback__title comment__title">Опишите свои эмоции:</legend>
               <label class="visualy-hidden" for="comment__comment"></label>
-              <textarea class="comment__textarea" id="comment__comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="comment__textarea" id="comment__comment" name="comment" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="button button-submit" type="submit" >Отправить отзыв</button>
         </form>

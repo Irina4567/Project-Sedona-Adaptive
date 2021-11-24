@@ -1,5 +1,5 @@
 .social {
-  margin-bottom: 45px;
+  padding-bottom: 45px;
 }
 
 .social__list {
@@ -14,9 +14,9 @@
 .social__item {
   margin: 0;
   padding: 0;
-  margin-right: 6px;
+  padding-right: 6px;
   &:last-child {
-    margin-right: 0;
+    padding-right: 0;
   }
 }
 
