@@ -1,0 +1,14 @@
+.video-gallery {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.video-gallery__title {
+  @include font(700, 18px, 26px);
+  margin-bottom: 29px;
+}
+
+.video-gallery__description {
+  @include font(400, 14px, 24px);
+  margin-bottom: 33px;
+}

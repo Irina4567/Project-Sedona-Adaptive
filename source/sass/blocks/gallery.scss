@@ -1,0 +1,38 @@
+.gallery {
+  margin-bottom: 32px;
+}
+
+.gallery__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__item {
+  padding-top: 22px;
+  padding-bottom: 15px;
+}
+
+.picture-item__link {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.picture-item__like-count {
+  @include font(700, 14px, 24px);
+}
+
+.picture-item__img {
+  background-color: $special-brown;
+  background-repeat: no-repeat;
+}
+
+.caption__title {
+  @include font(700, 14px, 24px);
+  margin-bottom: 1px;
+}
+
+.caption__description {
+  @include font(400, 14px, 24px);
+  margin-bottom: 13px;
+}
